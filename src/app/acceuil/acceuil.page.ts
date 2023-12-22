@@ -33,9 +33,7 @@ export class AcceuilPage implements OnInit {
  */
 
   async ngOnInit() {
-    //await this.studentService.loadStudents();
     this.student = await this.studentService.getStudents();
-
   }
 
   pagelisteNote() {

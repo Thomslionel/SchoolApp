@@ -26,19 +26,7 @@ export class ListeNotesPage implements OnInit {
     this.student = await this.storage?.get('students');
   }
 
-  /*for (let eleve of this.student) {
-    console.log("Élève : ", eleve);
-    console.log("ID : ", eleve.id);
-    console.log("Nom : ", eleve.nom);
-    console.log("Prénom : ", eleve.prenom);
-    console.log("Classe : ", eleve.classe);
-    if (eleve.note) {
-      for (let note of eleve.note) {
-        console.log("Note : ", note);
-        // Ici, vous pouvez accéder à toutes les propriétés de note
-      }
-    }
-  }*/
+
 
 
 

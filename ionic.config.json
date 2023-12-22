@@ -1,7 +1,9 @@
 {
   "name": "schoolApp",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    }
   },
   "type": "angular"
 }

@@ -83,7 +83,7 @@ export class EtudiantServiceService {
 
   setCurrentStudent(student: Student) {
     this.currentStudent = student;
-    console.log("Current student set:", this.currentStudent);
+
     localStorage.setItem('currentStudent', JSON.stringify(student));
   }
 
@@ -92,7 +92,7 @@ export class EtudiantServiceService {
     if (student) {
       this.currentStudent = JSON.parse(student);
     }
-    console.log("Getting current student : ", this.currentStudent);
+
     return this.currentStudent;
   }
 

@@ -27,13 +27,13 @@ export class ModifierEtudiantPage {
 
   ngOnInit() {
     this.etudiants = this.studentService.getCurrentStudent();
-    console.log("Getting current student dans modifié:", this.etudiants);
+
     this.nom = this.etudiants?.nom;
     this.prenom = this.etudiants?.prenom;
     this.classe = this.etudiants?.classe;
     this.id = this.etudiants?.id;
 
-    console.log("Id :", this.etudiants?.id);
+
   }
 
 

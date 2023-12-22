@@ -36,7 +36,7 @@ export class ModifierNotePage implements OnInit {
   async ngOnInit() {
     //await this.studentService.loadStudents();
     this.student = await this.storage?.get('students');
-    console.log(this.student)
+
   }
 
   /*

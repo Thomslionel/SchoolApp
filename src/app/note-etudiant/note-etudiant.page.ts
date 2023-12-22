@@ -21,7 +21,7 @@ export class NoteEtudiantPage implements OnInit {
   async ngOnInit() {
     //await this.studentService.loadStudents();
     this.student = await this.studentService.getStudents();
-    console.log(this.studentService.getStudents());
+
   }
 
 

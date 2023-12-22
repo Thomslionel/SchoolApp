@@ -72,23 +72,6 @@ export class ModifierNoteParStudentPage implements OnInit {
     return true; // Le formulaire est valide
   }
 
-  // async modifierNote() {
-  //   // Attendre que checkForm() se termine
-  //   this.notesArray = [];
-  //   this.notesArray.push({
-  //     mark: this.noteMark,
-  //     course: this.noteCourse,
-  //     semestre: this.noteSemestre
-  //   });
-  //   for (let note of this.notesArray) {
-  //     console.log("Tableau de Array : Course" + note.course)
-  //     console.log("Tableau de Array : Mark" + note.mark)
-  //     console.log("Tableau de Array : Semestre" + note.semestre)
-  //   }
-  //   if (this.etudiants && this.notesArray) {
-  //     this.studentService.updateNote(this.etudiants.id, this.notesArray);
-  //     this.navCtrl.navigateForward("/modifier-note");
-  //   }
-  // }
+
 
 }
