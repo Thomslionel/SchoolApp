@@ -1,0 +1,55 @@
+/* CSS pour la page */
+body {
+  background-color: #f0f0f0;
+  /* Couleur de fond claire */
+  color: #333;
+  /* Couleur de texte foncée pour le contraste */
+  font-family: Arial, sans-serif;
+  /* Police de caractères générique */
+}
+
+/* CSS pour le header */
+ion-header {
+  background-color: #007bff;
+  /* Bleu primaire */
+  color: #fff;
+  /* Texte blanc pour le contraste */
+}
+
+/* CSS pour le contenu */
+ion-content {
+  padding: 20px;
+  /* Espace autour du contenu */
+}
+
+/* CSS pour le formulaire */
+.formulaire {
+  background-color: #fff;
+  /* Fond blanc pour le formulaire */
+  border-radius: 5px;
+  /* Coins arrondis */
+  padding: 20px;
+  /* Espace à l'intérieur du formulaire */
+  margin-bottom: 20px;
+  /* Espace sous le formulaire */
+}
+
+/* CSS pour le bouton */
+ion-button {
+  background-color: #28a745;
+  /* Vert pour le bouton "Soumettre" */
+  color: #fff;
+  /* Texte blanc pour le contraste */
+  display: block;
+  /* Faire en sorte que le bouton prenne toute la largeur */
+  margin: 0 auto;
+  /* Centrer le bouton */
+}
+
+/* CSS pour le footer */
+ion-footer {
+  background-color: #007bff;
+  /* Bleu primaire */
+  color: #fff;
+  /* Texte blanc pour le contraste */
+}

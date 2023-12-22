@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar class="couleur" color="primary">
+    <ion-back-button slot="start" text="Retour" style="color: black;"></ion-back-button>
+    <ion-title class="acentrer">
+      SchoolApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1 style="text-align: center;">Liste des Etudiants</h1>
+  <p *ngIf="student.length > 0; else emptyList"></p>
+  <div *ngFor="let etudiant of student" class="student-item">
+    <h2 style="text-align: center;">{{etudiant.nom}} {{etudiant.prenom}}</h2>
+    <h5 style="text-align: center;">Classe : {{etudiant.classe}}</h5>
+    <div *ngFor="let note of etudiant.note; index as i">
+      <h3 style="text-align: center;">{{note.course}}</h3>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <h4 style="text-align: left;">Notes</h4>
+            <h4 style="text-align: left;">{{note.mark}}</h4>
+          </ion-col>
+          <ion-col size="6">
+            <h4 style="text-align: right;">Semestre</h4>
+            <h4 style="text-align: right;">{{note.semestre}}</h4>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-button expand="block" color="danger" (click)="supression(etudiant, note)" class="button-home">
+        Suppression
+      </ion-button>
+    </div>
+  </div>
+  <ng-template #emptyList>
+    <p style="text-align: center;">La liste est vide.</p>
+  </ng-template>
+
+</ion-content>
+
+
+
+
+
+
+
+<ion-toolbar color="primary">
+  <ion-footer>
+    <p style="text-align: center;">Moussa et Lionel</p>
+  </ion-footer>
+</ion-toolbar>

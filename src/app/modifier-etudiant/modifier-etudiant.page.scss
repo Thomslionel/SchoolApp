@@ -1,0 +1,19 @@
+ion-input#custom-input.ion-focused {
+  --background: #ffffff;
+  /* change to the color you want */
+}
+
+.formulaire {
+  margin: 20px;
+}
+
+ion-alert {
+  --background: #ffffff;
+  /* couleur de fond blanche */
+  --color: #ff0000;
+  /* couleur du texte rouge */
+}
+
+.my-custom-class {
+  --background: white;
+}

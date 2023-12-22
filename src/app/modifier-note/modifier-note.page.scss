@@ -1,0 +1,55 @@
+body {
+  background-color: #f0f0f0;
+  /* Couleur de fond claire */
+  color: #333;
+  /* Couleur de texte foncée pour le contraste */
+  font-family: Arial, sans-serif;
+  /* Police de caractères générique */
+}
+
+ion-header {
+  background-color: #007bff;
+  /* Bleu primaire */
+  color: #fff;
+  /* Texte blanc pour le contraste */
+}
+
+ion-content {
+  padding: 20px;
+  /* Espace autour du contenu */
+  text-align: center;
+
+}
+
+.student-item {
+  background-color: #fff;
+  /* Fond blanc pour chaque élément étudiant */
+  border-radius: 5px;
+  /* Coins arrondis */
+  padding: 20px;
+  /* Espace à l'intérieur de chaque élément étudiant */
+  margin-bottom: 20px;
+  /* Espace sous chaque élément étudiant */
+
+  border: solid black 1px;
+}
+
+ion-button {
+  background-color: #28a745;
+  /* Vert pour le bouton "Modifier une Note" */
+  color: #fff;
+  /* Texte blanc pour le contraste */
+  display: block;
+  /* Faire en sorte que le bouton prenne toute la largeur */
+  margin: 10px auto;
+  /* Centrer le bouton */
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+ion-footer {
+  background-color: #007bff;
+  /* Bleu primaire */
+  color: #fff;
+  /* Texte blanc pour le contraste */
+}

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar class="couleur" color="primary">
+    <ion-back-button slot="start" text="Retour" style="color: black;"></ion-back-button>
+    <ion-title style="text-align: center;margin-left: -25px;">
+      SchoolApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <p
+    style="text-align: center; text-shadow: 18px;font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">
+    Liste des Etudiants</p>
+  <ion-list lines="full" *ngFor="let etudiant of student" class="student-item"
+    style="border: solid 2px; box-shadow: 18px;">
+    <ion-item>
+      <ion-label>
+        <h4 style="text-align: center; font-size: 20px;">{{ etudiant.nom }} {{ etudiant.prenom }} </h4>
+
+        <h4 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          {{ etudiant.classe }}</h4>
+      </ion-label>
+
+    </ion-item>
+
+    <ion-buttons style="display: flex;justify-content: space-between;align-items: center;">
+      <ion-button color="success" (click)="modifier(etudiant)" class="button-modifier">Modifier</ion-button>
+      <ion-button color="danger" (click)="supprimerEtudiant(etudiant)">Supprimer</ion-button>
+    </ion-buttons>
+
+
+  </ion-list>
+
+  <ng-container *ngIf="student.length === 0; else nonEmptyList">
+    <p style="text-align: center;">La liste est vide.</p>
+  </ng-container>
+
+  <ng-template #nonEmptyList>
+    <!-- Vous pouvez ajouter du contenu ici si la liste n'est pas vide -->
+  </ng-template>
+</ion-content>
+
+
+
+
+<ion-button expand="block" color="danger" (click)="acceuil()" class="button-home">
+  Acceuil
+</ion-button>
+<ion-toolbar color="primary">
+  <p style="text-align: center;">Moussa et Lionel</p>
+
+</ion-toolbar>

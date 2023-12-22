@@ -1,0 +1,97 @@
+ion-input#custom-input.ion-focused {
+  --background: #ffffff;
+  /* change to the color you want */
+}
+
+.formulaire {
+  margin: 10px;
+}
+
+ion-alert {
+  --background: #ffffff;
+  /* couleur de fond blanche */
+  --color: #ff0000;
+  /* couleur du texte rouge */
+}
+
+.my-custom-class {
+  --background: white;
+}
+
+.resgistration-section {
+  height: 89vh;
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  margin: auto;
+  border-top-right-radius: 46px;
+  border-top-left-radius: 46px;
+
+  .heading {
+    margin-top: 20px;
+
+    h1 {
+      font-size: 1rem;
+      font-weight: bolder;
+      margin-left: 80px;
+
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: blanchedalmond;
+    }
+  }
+
+  .form {
+    .form-input {
+      position: relative;
+      margin-bottom: 10px;
+
+      ion-item:part(native) {
+        padding-left: 0;
+      }
+
+      ion-icon {
+        position: absolute;
+        top: 37px;
+        z-index: 2;
+        font-size: 1.2 rem;
+        left: 5px;
+      }
+
+      ion-label {
+        position: absolute;
+        margin-left: 35px;
+        font-weight: bolder;
+        font-size: 0.8rem;
+        top: 24px;
+      }
+
+      ion-input {
+        font-size: 0.9 rem;
+        --padding-start: 36px;
+        --padding-top: 36px
+      }
+    }
+
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .login-button {
+      font-family: 'Cursive', sans-serif;
+      font-size: 1.5rem;
+    }
+  }
+
+}

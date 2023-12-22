@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar class="couleur" color="primary">
+    <!--<ion-back-button slot="start" text="Retour" style="color: black;"></ion-back-button>-->
+    <ion-title class="acentrer">
+      SchoolApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content colo>
+
+  <p style="text-align: center;">Modifier un Etudiant</p>
+  <div class="formulaire">
+
+
+
+    <ion-input id="custom-input" label="Nom" labelPlacement="floating" [counter]="true" maxlength="20"
+      [counterFormatter]="customCounterFormatter" fill="outline" clearInput [(ngModel)]="nom"></ion-input>
+
+    <ion-input id="custom-input" label="Prenom" labelPlacement="floating" [counter]="true" maxlength="20"
+      [counterFormatter]="customCounterFormatter" fill="outline" clearInput [(ngModel)]="prenom"></ion-input>
+
+    <ion-input id="custom-input" label="Classe" labelPlacement="floating" [counter]="true" maxlength="5"
+      [counterFormatter]="customCounterFormatter" fill="outline" clearInput [(ngModel)]="classe"></ion-input>
+  </div>
+
+  <ion-button expand="block" color="danger" (click)="modifier()">
+    Modifier
+  </ion-button>
+  <br>
+
+  <!--<ion-button expand="block" color="danger" (click)="acceuil()">
+    Acceuil
+  </ion-button>-->
+
+  <!--<br>
+
+  <ion-button expand="block" color="success" style="text-align: center; color: white;" (click)="listedesEtudiants()">
+    Liste des Etudiants
+  </ion-button>-->
+
+
+</ion-content>
+
+
+
+
+
+<ion-toolbar color="primary">
+  <ion-footer>
+    <p style="text-align: center;">Moussa et Lionel</p>
+  </ion-footer>
+</ion-toolbar>

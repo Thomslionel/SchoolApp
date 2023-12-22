@@ -1,0 +1,61 @@
+/* Ajoutez ce CSS dans votre fichier CSS global ou dans le fichier CSS du composant */
+
+/* Pour chaque itération, ajoutez une élévation et une ligne en bas */
+.student-item {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  /* Ajoute une élévation */
+  border-bottom: 1px solid #000;
+  /* Ajoute une ligne en bas */
+  margin-bottom: 10px;
+  /* Ajoute un espace entre les éléments */
+  padding: 10px;
+  /* Ajoute un peu d'espace à l'intérieur de l'élément */
+}
+
+/* Pour le bouton d'accueil, ajoutez des bords arrondis */
+.button-home {
+  border-radius: 20px;
+  /* Ajoute des bords arrondis */
+}
+
+.button-modifier {
+  margin-right: 20px;
+  /* Ajoute une marge à droite */
+}
+
+
+/* Pour le titre h1 */
+h1 {
+  color: #3498db;
+  /* Couleur du texte */
+  text-align: center;
+  /* Centrer le texte */
+  font-size: 2.5em;
+  /* Taille de la police */
+  font-weight: bold;
+  /* Gras */
+}
+
+/* Pour le titre h2 */
+h2 {
+  color: #2c3e50;
+  /* Couleur du texte */
+  text-align: left;
+  /* Aligner le texte à gauche */
+  font-size: 2em;
+  /* Taille de la police */
+  font-weight: normal;
+  /* Normal */
+}
+
+/* Pour le titre h3 */
+h3 {
+  color: #7f8c8d;
+  /* Couleur du texte */
+  text-align: right;
+  /* Aligner le texte à droite */
+  font-size: 1.5em;
+  /* Taille de la police */
+  font-weight: light;
+  /* Léger */
+}

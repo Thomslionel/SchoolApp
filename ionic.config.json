@@ -1,0 +1,7 @@
+{
+  "name": "schoolApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

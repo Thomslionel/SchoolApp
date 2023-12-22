@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="acentrer" style="text-align: center;">
+      SchoolApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-img [src]="'assets/ok.jpg'"></ion-img>
+    </ion-card-header>
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Menu</ion-title>
+  </ion-toolbar>
+
+
+
+
+
+
+
+
+  <ion-row class="ion-margin-horizontal">
+
+
+    <ion-col size="6">
+      <ion-card>
+        <ion-buttons routerLink="/home">
+          <ion-card-header>
+            <ion-thumbnail>
+              <img [src]="'assets/etudiant.png'" style="margin-left: -20px;">
+            </ion-thumbnail>
+
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label color="dark" style="margin-left: -65px; text-align: center;">
+              Ajouter Etudiant</ion-label>
+          </ion-card-content>
+        </ion-buttons>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-card>
+        <ion-buttons routerLink="/note-etudiant">
+          <ion-card-header>
+            <ion-thumbnail>
+              <img [src]="'assets/addNote.png'" style="margin-left: -20px;">
+            </ion-thumbnail>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label color="dark" style="margin-left: -55px; text-align: center;">
+              Ajouter des notes</ion-label>
+          </ion-card-content>
+        </ion-buttons>
+      </ion-card>
+    </ion-col>
+
+
+    <ion-col size="6">
+      <ion-card>
+        <ion-buttons (click)="pagelisteNote()">
+          <ion-card-header>
+            <ion-thumbnail>
+              <img [src]="'assets/supNo.png'" style="margin-left: -20px;">
+            </ion-thumbnail>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label color="dark" style="margin-left: -55px; text-align: center;">
+              Lister des Notes</ion-label>
+          </ion-card-content>
+        </ion-buttons>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-card>
+        <ion-buttons routerLink="/modifier-note">
+          <ion-card-header>
+            <ion-thumbnail>
+              <img [src]="'assets/modEtu.png'" style="margin-left: -20px;">
+            </ion-thumbnail>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label color="dark" style="margin-left: -55px; text-align: center;">
+              Modifier notes</ion-label>
+          </ion-card-content>
+        </ion-buttons>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>
+
+
+
+<ion-toolbar color="primary">
+
+  <p style="text-align: center;">Moussa et Lionel</p>
+
+</ion-toolbar>

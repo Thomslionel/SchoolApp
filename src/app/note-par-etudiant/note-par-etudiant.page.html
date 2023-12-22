@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar class="couleur" color="primary">
+    <!--<ion-back-button slot="start" text="Retour" style="color: black;"></ion-back-button>-->
+    <ion-title class="acentrer">
+      SchoolApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <p style="text-align: center;">Note de l'etudiant {{nom}}</p>
+  <div class="formulaire">
+
+    <div *ngFor="let note of notesArray; index as i">
+      <h5> Module {{i + 1}}</h5>
+      <ion-item>
+        <ion-label>Note {{ i + 1 }}</ion-label>
+        <ion-input type="number" label="Note" [(ngModel)]="note.mark"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cours</ion-label>
+        <ion-select label="Cours" [(ngModel)]="note.course">
+          <ion-select-option value="Informatique">Informatique</ion-select-option>
+          <ion-select-option value="Electrotechnique">Electrotechnique</ion-select-option>
+          <ion-select-option value="TCPIP">TCP/IP</ion-select-option>
+          <ion-select-option value="AngularIonic">Angular et Ionic</ion-select-option>
+          <!-- Ajoutez plus d'options si nécessaire -->
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Semestre</ion-label>
+        <ion-select label="Semestre" [(ngModel)]="note.semestre">
+          <ion-select-option value="Semestre 1">Semestre 1</ion-select-option>
+          <ion-select-option value="Semestre 2">Semestre 2</ion-select-option>
+          <!-- Ajoutez plus d'options si nécessaire -->
+        </ion-select>
+      </ion-item>
+    </div>
+    <ion-button (click)="ajouterNote() ; checkForm()">Soumettre</ion-button>
+  </div>
+</ion-content>
+
+
+
+
+
+
+
+
+<!--<ion-button expand="block" color="danger" (click)="acceuil()">
+    Acceuil
+  </ion-button>-->
+
+<!--<br>
+
+  <ion-button expand="block" color="success" style="text-align: center; color: white;" (click)="listedesEtudiants()">
+    Liste des Etudiants
+  </ion-button>-->
+
+
+
+
+
+
+
+
+<ion-toolbar color="primary">
+  <p style="text-align: center;">Moussa et Lionel</p>
+
+</ion-toolbar>
